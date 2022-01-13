@@ -1,0 +1,76 @@
+Tue Jul 23 05:56:35 IDT 2019
+============================
+
+A checklist for making releases
+
+Latest config.guess and config.sub from Gnulib.
+The regtest test and other non-standard tests all pass
+Copyright dates in all files updated
+	main.c - copyright message too!
+ChangeLogs in place and updated
+README updated
+README_d/* edited
+VMS/* version stuff up to date
+	vms/vmsbuild.com
+	vms/descrip.mms
+NEWS is up to date
+Any new options have been added to usage function
+All paper work signed and sent in
+All files checked in
+Version information is correct in
+	doc/gawk.1
+	doc/awkcard.in
+	doc/gawktexi.in
+	doc/gawkinet.texi
+	extension/configure.ac
+doc/texinfo.tex is up to date
+doc/gawktexi.in is up to date
+doc/gawkinet.texi is up to date
+doc/gawk.1 is up to date
+doc/awkcard.in is up to date
+Italian translations are up to date:
+	doc/it/gawktexi.in
+	doc/it/gawk.1
+	po/it.po
+Run prepinfo on the manual.
+Spell check the manual.
+Update the wordlist for spell checking.
+test/Makefile.am: order and prettify lists of tests
+API Version numbers have been modified correctly in gawkapi.h.
+
+Testing on
+	make clean
+	make distclean
+	make maintainer-clean
+	make release
+
+	compile with tcc
+	compile with pcc
+	compile with clang
+
+	compile 32 bit tests - clang and gcc
+
+	configure --disable-lint
+	configure --disable-nls
+
+	building in a different directory from the source
+	building doc in a different directory from the source
+
+The simplest way of making sure that no PO file is forgotten, is to 
+run the following command just before rolling a new release:
+
+  rsync -Lrtvz translationproject.org::tp/latest/gawk/ po
+
+Major releases:
+- Rotate the ChangeLog and NEWS files.
+- When doing so, update any necessary Makefile.am files to
+  list the rotated ChangeLog file!
+
+========== For Releasing ============
+
+To upload:
+	gnupload --to ftp.gnu.org:gawk gawk-Whatever.gz
+
+For doc:
+	Use the perl makeinfo to create the files.
+	Use gendocs.sh and gendoc_template from gnulib.

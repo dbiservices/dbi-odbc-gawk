@@ -1,0 +1,144 @@
+2019-06-18         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 5.0.1: Release tar ball made.
+
+2019-04-12         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 5.0.0: Release tar ball made.
+
+2018-02-25         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 4.2.1: Release tar ball made.
+
+2017-12-28         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* update-aux.sh: New script.
+
+2017-10-19         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 4.2.0: Release tar ball made.
+
+2017-06-27         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* testdfa.c: Bring up to date, fix compile warnings.
+	Remove more xmalloc stuff.
+
+2017-06-25         Andrew J. Schorr      <aschorr@telemetry-investments.com>
+
+	* testdfa.c (xcalloc): Replace xmalloc+memset with calloc.
+	(xzalloc): Replace xmalloc+memset with xcalloc.
+
+2017-04-26         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* test-build.sh: Allow override of compiler lists. Print
+	out path to current compiler. Thanks to Michal Jaegermann
+	<michal.jnn@gmail.com> for the suggestions.
+
+2017-04-24         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* test-build.sh: New file.
+
+2017-03-20         Andrew J. Schorr      <aschorr@telemetry-investments.com>
+
+	* update-branches.sh: Robustness improvements.
+
+2017-02-23         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* update-branches.sh: New file.
+
+2016-10-23         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* General: Remove trailing whitespace from all relevant files.
+
+2016-09-08  Paul Eggert  <eggert@cs.ucla.edu>
+
+	* testdfa.c: Adjust to DFA API changes.
+
+2016-08-25         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 4.1.4: Release tar ball made.
+
+2016-06-08         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* changed-files.awk: New program. Helps find files that need
+	copyright updates by scanning ChangeLog files.
+
+2016-03-07         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* fixdump.awk (translate): Remove extraneous spaces in
+	prints of code targets.
+	* fixdump.awk: Convert to normal Unix line endings.
+
+2015-08-28	Daniel Richard G.	<skunk@iSKUNK.ORG>
+
+	* testdfa.c: Define and use the USE_EBCDIC cpp symbol
+	instead of checking the value of 'a' whenever we want to know
+	if we're on an EBCDIC system. Also, don't assume that z/OS
+	necessarily means EBCDIC, as the compiler does have an ASCII
+	mode (-qascii).
+
+2015-05-27         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* mb_cur_max.c, timeformat.c: New files.
+
+2015-05-19         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 4.1.3: Release tar ball made.
+
+2015-04-29         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* gende.c, genbin.awk: New files.
+
+2015-04-29         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 4.1.2: Release tar ball made.
+
+2015-04-09         Andrew J. Schorr     <aschorr@telemetry-investments.com>
+
+	* testdfa.c (setup_pattern): Rationalize buffer size computations.
+
+2014-12-18         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* testdfa.c (setup_pattern): Do not waste a byte at the end of a string.
+
+2014-09-04         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* chlistref.awk: New file. Finds @ref{} to non-chapters.
+
+2014-06-08         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* testdfa.c: Minor improvements.
+
+2014-04-08         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 4.1.1: Release tar ball made.
+
+2014-03-10         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* quoteconvert2.sh: Use .UTF-8 locales per request from
+	Michal Jaegermann.
+
+2014-03-08         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* quoteconvert2.sh, tryfmt.c, scanfmt.c: New files.
+
+2013-12-21         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* testdfa.c: Fix some bugs and compiler warnings.
+
+2013-12-12         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* do.outline: New file.
+
+2013-06-27         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* ChangeLog: Created.
+	* testdfa.c: Add ifdef around xalloc.h, for use with grep dfa.
+
+2013-06-03         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* testdfa.c: New file.
+
+2013-06-03         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* testnet.awk, testnet.c, fixdump.awk: New files.

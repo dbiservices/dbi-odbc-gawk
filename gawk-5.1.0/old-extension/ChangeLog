@@ -1,0 +1,50 @@
+2020-04-14         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 5.1.0: Release tar ball made.
+
+2019-06-18         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 5.0.1: Release tar ball made.
+
+2019-04-12         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 5.0.0: Release tar ball made.
+
+2018-02-25         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 4.2.1: Release tar ball made.
+
+2017-10-19         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* 4.2.0: Release tar ball made.
+
+2017-06-21         Andrew J. Schorr     <aschorr@telemetry-investments.com>
+
+	* bindarr.c (do_bind_array): Replace emalloc+memset with ezalloc.
+
+2016-10-23         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* General: Remove trailing whitespace from all relevant files.
+
+2015-04-09         Andrew J. Schorr     <aschorr@telemetry-investments.com>
+
+	* bindarr.c (do_bind_array): Undo Arnold's change of 2014-12-18.
+
+2014-12-18         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* bindarr.c (do_bind_array): Do not waste a byte at the end of a string.
+	* fileop.c (do_fread): Ditto.
+
+2014-01-07         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* dbarray.awk: Use full name for lib to load in extension() call.
+	* record.awk: Ditto.
+	* testsparr.awk: Ditto.
+	* spec_array.c [SUPER]: Fix so that it will compile.
+
+2013-01-06         Arnold D. Robbins     <arnold@skeeve.com>
+
+	* bindarr.c, dbarray.awk, fileop.c, record.awk, sparr.c,
+	spec_array.c, spec_array.h, steps, testdbarray.awk, testrecord.sh,
+	testsparr.awk: Moved here from extension directory, since they
+	use the old mechanism.
