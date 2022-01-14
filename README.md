@@ -27,7 +27,7 @@ It relies on the ODBC Driver Manager and ODBC drivers for each data source to be
 ```
 mkdir ~/odbc-gawk
 cd ~/odbc-gawk
-git clone https://github.com/ccervini/odbc-gawk.git
+git clone https://github.com/dbiservices/dbi-odbc-gawk.git
 cd gawk-5.1.0/extension
 
 export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/odbc:/home/debian/instantclient_21_3:$LD_LIBRARY_PATH
